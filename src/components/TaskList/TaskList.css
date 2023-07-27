@@ -1,0 +1,55 @@
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
+  font-family: "Poppins", sans-serif;
+  gap: 5rem;
+}
+.todo-container > * {
+  flex-basis: 49.5%;
+}
+
+.todo-container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  letter-spacing: 1px;
+  font-size: 4rem;
+  color: #444;
+  margin-bottom: 3rem;
+}
+.todo-list,
+.completed-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.todo-list--ongoing,
+.todo-list--completed {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 7px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.drag-active,
+.drag-complete {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1440px) {
+  .todo-container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .todo-container {
+    width: 100%;
+  }
+}

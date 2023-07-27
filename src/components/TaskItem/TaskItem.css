@@ -1,0 +1,96 @@
+.todo-item {
+  flex: 1;
+  background-color: #f0932b;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  font-weight: 500;
+  transition: 0.2s all;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item:hover {
+  transform: scale(1.05);
+}
+
+.todo-item--completed {
+  background-color: #27ae60;
+}
+.todo-item--completed .todo-item__control__icon--delete {
+  color: #27ae60;
+}
+.todo-item--completed .todo-item__control__icon--undo {
+  color: #27ae60;
+}
+.todo-item__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.todo-item__control {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-edit {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-edit__input {
+  width: 95%;
+  border: none;
+  padding: 0 1rem;
+  font-size: 2rem;
+  border-radius: 7px;
+}
+.todo-item__control__icon {
+  font-size: 3.5rem;
+  background-color: #fff;
+  color: #f0932b;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+.todo-item__control__icon--delete {
+  transition: 0.2s all;
+}
+.todo-item__control__icon--delete:hover {
+  background-color: #eb4d4b;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.todo-item__control__icon--done {
+  transition: all 0.2s;
+}
+
+.todo-item__control__icon--done:hover {
+  background-color: #27ae60;
+  color: #fff;
+  transform: scale(1.2);
+}
+.todo-item__control__icon--edit {
+  transition: all 0.2s;
+}
+.todo-item__control__icon--edit:hover {
+  background-color: #be2edd;
+  color: #fff;
+  transform: scale(1.2);
+}
+.todo-item__control__icon--undo {
+  transition: all 0.2s;
+}
+.todo-item__control__icon--undo:hover {
+  background-color: #f0932b;
+  color: #fff;
+  transform: scale(1.2);
+}
